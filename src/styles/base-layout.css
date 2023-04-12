@@ -1,0 +1,47 @@
+.base-layout .aside-left {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.base-layout .brand {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.base-layout .brand .brand-logo {
+    width: 30px;
+    aspect-ratio: 1/1;
+}
+
+.base-layout .brand .brand-name {
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.base-layout .aside-left.collapsed+.main {
+    margin-left: 80px;
+}
+
+.base-layout .main {
+    margin-left: 200px;
+    transition: all 0.3s;
+}
+
+.base-layout .main>* {
+    padding: 15px;
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+.base-layout .main .header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
